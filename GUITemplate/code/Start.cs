@@ -25,7 +25,7 @@ namespace GUITemplate
             catch (Exception e)
             {
 
-                Console.WriteLine(e);
+                //LogManager.Error(e);
 
                 //show user error
                 MessageBox.Show(e.Message, "Unexpected error", MessageBoxButton.OK, MessageBoxImage.Error);

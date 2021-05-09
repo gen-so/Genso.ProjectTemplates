@@ -7,6 +7,7 @@
 
 
     <!--VIEWMODAL-->
+    <!--main grid viewmodal is added here as a static resource & initialized in mainwindow constructor-->
     <guiTemplate:MainGrid  x:Key="MainGrid" />
 
 
@@ -38,8 +39,8 @@
     <Style x:Key="TextBox">
 
         <Setter Property="Control.VerticalContentAlignment" Value="Center" />
-        <Setter Property="Control.BorderThickness" Value="{Binding TextBoxBorderThickness}" />
-        <Setter Property="Control.BorderBrush" Value="{Binding TextBoxBorderColor}" />
+        <!--<Setter Property="Control.BorderThickness" Value="{Binding TextBoxBorderThickness}" />
+        <Setter Property="Control.BorderBrush" Value="{Binding TextBoxBorderColor}" />-->
         <Setter Property="TextBox.TextWrapping" Value="Wrap" />
         <Setter Property="FrameworkElement.Height" Value="23" />
     </Style>

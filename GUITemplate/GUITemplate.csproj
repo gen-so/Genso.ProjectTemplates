@@ -7,4 +7,10 @@
     <StartupObject>GUITemplate.Start</StartupObject>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Update="blueprint.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

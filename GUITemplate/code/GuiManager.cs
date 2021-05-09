@@ -1,4 +1,6 @@
-﻿namespace GUITemplate
+﻿using System.Windows;
+
+namespace GUITemplate
 {
     /// <summary>
     /// This class encapsulates the whole GUI,
@@ -7,8 +9,8 @@
     /// </summary>
     public class GuiManager
     {
-        private MainWindow _mainWindow; //main window that hold all
-        private MainGrid _mainGrid; //primary element inside main window
+        private MainWindow _mainWindow;
+        private MainGrid _mainGrid;
         public bool isReady = false; //default is not ready
 
 
@@ -22,6 +24,7 @@
             //get the modal from the main window (WPF creates the modal)
             //WPF creates the modal cause it's easier for design time debugging
             _mainGrid = _mainWindow.MainGrid;
+
         }
 
 
@@ -36,6 +39,7 @@
 
 
 
+
         /** PUBLIC METHODS **/
 
         /// <summary>
@@ -43,10 +47,18 @@
         /// </summary>
         public void Run() => _mainWindow.ShowDialog();
 
+        /// <summary>
+        /// Show generic popup message to user
+        /// </summary>
+        public void ShowPopupMessage(string message)
+        {
+            MessageBox.Show(message);
+        }
 
 
 
         /** PRIVATE METHODS **/
+
 
     }
 
